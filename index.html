@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Prototype webpage</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+
+<body style="background-image: url('assets/webback.jpg'); ">
+
+   
+
+    <header>
+
+        
+        </div>
+        <nav class='navbar'>
+            <ul>
+                <li><a href="#"> Home </a> </li>
+                <li><a href="#"> Image Gallery </a></li>
+                <li><a href="#"> 3D Models </a></li>
+                <li><a href="#"> About </a></li>
+
+                <div class="search">
+
+                    <input type="text" name="search" id="search" placeholder="Recent Animal Spottings">
+
+                </div>
+            </ul>
+    </header>
+
+   
+
+    <header id="showcase">
+
+
+
+        <h1 style="color:#1ced5f">WELCOME TO THE, <br> <span style="color:white">ANIMAL MUSUEM OF COORG</span></h1>
+
+        <img src="assets/lpi.jpg" class="feature-img">
+
+        <p style="color:#decc02" margin:30px;> 25 % of living animal & bird species found in India are present in
+            Coorg.<br>
+            Experience them in detailed interactive manners with
+            SIGHTING, INFORMATION IN REAL TIME, and 3D MODELS of the animals for easier understanding of their anatomy
+        </p>
+        <a href="#" class="button" style="color:#1ced5f">READ MORE ..</a>
+
+
+    </header>
+
+
+
+    <div class="container">
+        
+
+        <div class="heading">
+
+            <h2 style="font-family: 'Megrim', cursive;"> Animals of Coorg - <span
+                    style="font-family: 'Megrim', cursive;">Photo Gallery</span> </h2>
+
+        </div>
+
+        <div class="box">
+
+
+
+            <div class="pics">
+
+                <img src="assets/2.jpg" onclick="openfullpic()">
+                <img src="assets/3.jpg" onclick="openfullpic()">
+                <img src="assets/4.jpg" onclick="openfullpic()">
+                <img src="assets/1.jpg" onclick="openfullpic()">
+            </div>
+
+            <div class="pics">
+                <img src="assets/5.jpg" onclick="openfullpic()">
+                <img src="assets/6.jpg" onclick="openfullpic()">
+                <img src="assets/8.jpg" onclick="openfullpic()">
+                <img src="assets/12.jpeg" onclick="openfullpic()">
+
+
+                <div class="btn">
+                    <a href="#">FIND MORE ⬆</a>
+                </div>
+
+                <div class="models">
+                    <a href="#">MODELS - 3D VIEWING ANIMALS</a>
+                </div>
+
+            </div>
+
+
+
+            <div class="pics">
+                <img src="assets/9.jpg" onclick="openfullpic()">
+                <img src="assets/10.jpg" onclick="openfullpic()">
+                <img src="assets/11.jpg" onclick="openfullpic()">
+                <img src="assets/7.jpg" onclick="openfullpic()">
+
+
+
+            </div>
+
+
+
+
+            <div class="popup-image">
+                <span>&times;</span>
+                <img src="assets/2.jpg" alt="">
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+
+    <div class="Crocodile">
+
+        <model-viewer src="assets/Crocodile.glb" style=" border: 3.5px solid rgb(99, 102, 252);" auto-rotate camera-controls></model-viewer>
+    
+      </div>
+    
+      
+        <audio controls style="width:30%; margin-left: 50px; margin-top: 430px;">
+           <source src="assets/crocodilegrowl.mp3" type="audio/mpeg">
+        </audio>
+    
+    
+    
+      <div class="Elephant">
+    
+        <model-viewer src="assets/Elephant.glb" style=" border: 3.5px solid rgb(99, 102, 252); "auto-rotate camera-controls></model-viewer>
+    
+      </div>
+
+      <audio controls style="width:30%; position: absolute; left:850px; ">
+        <source src="assets/elephant.mp3" type="audio/mpeg">
+     </audio>
+ 
+    
+      <div class="Hummingbird">
+    
+        <model-viewer src="assets/Hummingbird.glb" style=" border: 3.5px solid rgb(99, 102, 252); " auto-rotate camera-controls></model-viewer>
+    
+      </div>
+
+      <audio controls style="width:30%; margin-left: 50px; margin-top: 830px;">
+        <source src="assets/bird.mp3" type="audio/mpeg">
+     </audio>
+    
+      <div class="Snake">
+    
+        <model-viewer src="assets/Snake.glb" style=" border: 3.5px solid rgb(99, 102, 252); " auto-rotate camera-controls></model-viewer>
+    
+      </div>
+    
+      <audio controls style="width:30%;">
+           <source src="assets/snakehiss.mp3" type="audio/mpeg">
+        </audio>
+
+
+
+    <script>
+
+        document.querySelectorAll('.pics img').forEach(image => {
+            image.onclick = () => {
+
+                document.querySelector('.popup-image').style.display = 'block';
+                document.querySelector('.popup-image img').src = image.getAttribute('src');
+
+            }
+        });
+
+        document.querySelector('.popup-image span').onclick = () => {
+            document.querySelector('.popup-image').style.display = 'none';
+        }
+    </script>
+
+</body>
+
+</html>

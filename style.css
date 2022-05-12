@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500&family=Indie+Flower&family=Josefin+Slab:ital@1&family=Megrim&family=Quicksand:wght@600&family=Righteous&family=Zen+Loop&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-size: cover;
+    line-height: 1.3;
+}
+
+.feature-img{
+position: absolute;
+height: 80%;
+width: auto;
+left: 900px;
+margin-bottom: 15px;
+border-radius: 30px;
+border: 3.5px solid #decc02;
+
+}
+
+.feature-img:hover{
+     
+    border: 4px solid #fff;
+    transition: 0.8s;
+    box-shadow: 15px 15px #1ced5f
+    
+    }
+
+
+#showcase {
+    background-image: url('assets/pageback.jpg');
+    position: relative;
+    object-fit: cover ;
+    display:flex;
+    border: 2.3px solid #fff;
+    flex-direction: column;
+    border-radius: 30px;
+    padding: 60px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#showcase h1 {
+    font-size: 75px;
+    margin-left: 70px;
+    text-align: left;
+    font-family: 'Zen Loop', cursive;
+}
+
+#showcase h1 span {
+    font-size: 70px;
+    text-align: left;
+    font-family: 'Zen Loop', cursive;
+}
+
+
+
+#showcase h2 {
+    font-size: 70px;
+    margin-left: 80px;
+    text-align: left;
+    margin-bottom: 10px;
+    font-family: 'Zen Loop', cursive;
+}
+
+
+
+#showcase p {
+    font-size: 30px;
+    margin-left: 80px;
+    font-family: 'Megrim';
+    text-align: left;
+    margin-bottom: 40px;
+    width: 50%;
+    font-weight: bolder;
+}
+
+#showcase .button {
+    text-decoration: none;
+    font-size: 1.15em;
+    margin-left: 80px;
+    align-items: center;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    border-radius: 35px;
+    border: 2.3px solid #fff;
+    padding: 10px;
+    width: 12%;
+}
+
+#showcase .button:hover {
+    border: 2.2px solid #1ced5f;
+}
+
+.navbar {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    background-size: auto;
+    height: 57px;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.navbar ul {
+    overflow: auto;
+}
+
+.navbar li {
+    float: left;
+    list-style: none;
+    padding: 12px;
+    padding-right: 45px;
+}
+
+.navbar li a {
+    font-size: 1.4em;
+    margin-left: 80px;
+    font-family: 'Megrim', cursive;
+    text-decoration: none;
+    padding: 7px;
+    color: #fff;
+    font-weight: bolder;
+}
+
+.navbar li a::after {
+    content: '';
+    height: 2px;
+    width: 0%;
+    display: block;
+    background-color: #1ced5f;
+    transition: .4s ease-in-out;
+
+}
+
+.navbar li a:hover::after {
+    content: '';
+    margin-left: 75px;
+    padding-left: 10px;
+    height: 2px;
+    width: 65%;
+    background-color: #1ced5f;
+    display: block;
+}
+
+.navbar li a:hover {
+    color: #decc02;
+    font-weight: bolder;
+}
+
+.search {
+    float: right;
+    color: #fff;
+    margin-right: 85px;
+    margin-top: 15px;
+    height: 50px;
+}
+
+.navbar input {
+    border: 2px solid black;
+    border-radius: 14px;
+    padding: 3px 17px;
+    width: 270px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 100px;
+    margin-top: 40px;
+}
+
+.container .heading h2 {
+    font-family: 'Zen Loop', cursive;
+    font-size: 3em;
+    font-weight: bolder;
+    padding: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 33px;
+    border: 3.5px solid #ffffff;
+    border-radius: 60px;
+    color: #decc02;
+}
+
+.container .heading h2:hover {
+    color: #1ced5f;
+}
+
+.container .heading .h2 span {
+    font-size: 100px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 100;
+}
+
+.container .box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container .box .pics {
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+
+}
+
+.container .box .pics img {
+    width: 100%;
+    justify-content: space-between;
+    margin: 9px;
+    border: 2.5px solid #ffffff;
+}
+
+.container .btn {
+    margin: 10px;
+    margin-top: 30px;
+    margin-left: 118px;
+    width: 45%;
+    border-radius: 60px;
+    padding: 10px;
+    border: 3.1px solid #ffffff;
+}
+
+.container .btn:hover {
+    border: 3.1px solid #decc02;
+}
+
+.container .btn a {
+    font-size: 1em;
+    font-family: 'Quicksand', sans-serif;
+    color: #1ced5f;
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 1.3em;
+    letter-spacing: 0.4px;
+}
+
+.container .models {
+    width: 100%;
+    margin-top: 150px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding: 20px;
+    border: 3.5px solid #fff;
+    border-radius: 60px;
+}
+
+.container .models:hover {
+    color: #fff;
+    ;
+}
+
+.container .models a {
+    font-family: 'Megrim', cursive;
+    color: #1ced5f;
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 1.7em;
+}
+
+.container .models a:hover {
+    color: #decc02;
+
+}
+
+.container .box .pics img:hover {
+    transform: scale(0.925);
+    transition-duration: 0.7s;
+    box-shadow: 0 80px 110px #2e2c2b;
+
+}
+
+.container .popup-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+
+.container .popup-image span {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.container .popup-image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #decc02;
+    width: 750px;
+    object-fit: cover;
+}
+
+
+.Crocodile {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+.Crocodile model-viewer {
+    transform: scale(1.2);
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    top: 2750px;
+    left: 57px;
+
+}
+
+.Snake {
+    height: 100%;
+    width: 100%;
+}
+
+.Snake model-viewer {
+    transform: scale(1.2);
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    top: 2750px;
+    left: 850px;
+}
+
+.Elephant {
+    height: 100%;
+    width: 100%;
+}
+
+.Elephant model-viewer {
+    transform: scale(1.2);
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    top: 3150px;
+    left: 850px;
+}
+
+.Hummingbird {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+.Hummingbird model-viewer {
+    transform: scale(1.2);
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    top: 3150px;
+    left: 57px;
+
+}
+
+@media (max-width:768px) 
+     {}.container .popup-image img {
+        width: 95%;
+    }
